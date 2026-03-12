@@ -16,19 +16,46 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+}
+@media(max-width:768px)
+{
+    .header{
+        min-height: 50vh;
+        background-image: url("images/bg-header-mobile.png") ;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 40px;
+        padding: 40px 20px;
+        
+    }
 }
 
 .container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
     
 }
+#button{
+    display:flex;
+    gap:20px
+}
 
+@media(max-width:768px){
+.container{
+    padding: 20px;
+}
+#button{
+flex-direction: column;
+width: 100%;
+}
+
+}
 
 #ios{
     border-radius: 20px;
@@ -59,16 +86,34 @@ body{
     margin-bottom: 20px;
 }
 
-#mainbody{
+.containermain{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center; */
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
-#mainheading{
-    margin-top: 60px;
+@media(max-width:768px)
+{
+    .containermain{
+        padding:20px;
+        text-align:center;
+    }
+
+    #mainheading{
+        width:100%;
+        margin-bottom:15px;
+    }
+
+    #mainpara{
+        width:100%;
+        margin-bottom:20px;
+    }
+}
+#mainheading1{
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 .features{
@@ -77,6 +122,7 @@ body{
     align-items: center;
     gap: 60px;
     padding: 60px;
+    margin: 30px ;
 }
 #mainpara1{
     width: 600px;
@@ -226,4 +272,72 @@ margin-bottom: 10px;
     margin-right: 30px;
     margin-bottom: 10px;
     
+}
+
+
+@media (max-width:768px){
+
+.features{
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    margin: 30px;
+}
+
+.image img{
+    width:100%;
+    max-width:300px;
+}
+.content{
+    max-width:100%;
+}
+#mainpara1{
+    width:100%;
+}
+.tabletimage img{
+    width:100%;
+    max-width:320px;
+}
+
+.container2{
+    flex-direction: column;
+    align-items:center;
+    gap:40px;
+}
+
+.imgcontainer{
+    flex-direction: column;
+    align-items:center;
+    gap:40px;
+}
+
+#buttonfinal{
+    flex-direction: column;
+    width:100%;
+    align-items:center;
+}
+
+.footercontainer{
+    flex-direction: column;
+    align-items:center;
+    text-align:center;
+    gap:30px;
+    padding:30px 0;
+}
+#footercontent{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+#footercontent a{
+    padding:5px;
+    margin:0;
+}
+
+#social{
+    display:flex;
+    gap:20px;
+}
+
 }
