@@ -11,22 +11,23 @@ body{
 }
 .header{
     
-    height: 60vh;
+    /* height: 40vh; */
     background-image: url("images/bg-header-desktop.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    padding: 80px 20px;
 }
 @media(max-width:768px)
 {
     .header{
-        min-height: 50vh;
+        min-height: 20vh;
         background-image: url("images/bg-header-mobile.png") ;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         padding: 40px 20px;
         
     }
@@ -35,10 +36,10 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
+    margin-bottom: 10px;
     
 }
 #button{
