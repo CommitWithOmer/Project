@@ -60,7 +60,7 @@ width: 100%;
 
 #ios{
     border-radius: 20px;
-    background-color: rgb(0, 255, 229);
+    background-color: #26BAA4;
     color: white;
     padding: 10px;
     cursor: pointer;
@@ -69,7 +69,7 @@ width: 100%;
 }
 #mac{
     border-radius: 20px;
-    background-color:rgb(0, 64, 128);
+    background-color:#6173FF;
     color: white;
     padding: 10px;
     cursor: pointer;
