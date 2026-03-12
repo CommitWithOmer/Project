@@ -280,26 +280,63 @@ margin-bottom: 10px;
     width:24px;
     margin-right:15px;
 }
-/* #footercontent a{
-    padding: 60px;
-    margin-right: 40px;
+#footercontent a{
+    /* padding: 60px; */
+    justify-content: space-evenly;
+    /* margin-right: 20px; */
     margin-bottom: 10px;
     
+}
+
+/* this is copy */
+
+/* Desktop footer links */
+/* #footercontent {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+#footercontent div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#footercontent div a {
+    color: #333;
+    font-size: 15px;
 } */
 
-#footercontent{
+#footercontent {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#footercontent div {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+#footercontent div a {
+    color: #333;
+    font-size: 15px;
+}
+/* #footercontent{
     display: flex;
     display: grid;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     grid-template-columns: repeat(3, 2);
     gap: 20px 60px;
 
-}
-#footercontent div a{
+} */
+/* #footercontent div a{
     margin-right: 150px;
-}
+} */
 
 
 @media (max-width:768px){
@@ -344,8 +381,9 @@ margin-bottom: 10px;
     align-items:center;
 }
 
-.footercontainer{
+/* .footercontainer{
     flex-direction: column;
+    justify-content: center;
     align-items:center;
     text-align:center;
     gap:30px;
@@ -354,10 +392,12 @@ margin-bottom: 10px;
 #footercontent{
     display:flex;
     flex-direction:column;
+    justify-content: center;
     gap:10px;
 }
 
 #footercontent a{
+    
     padding:5px;
     margin:0;
 }
@@ -365,6 +405,50 @@ margin-bottom: 10px;
 #social{
     display:flex;
     gap:20px;
+} */
+ .footercontainer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 40px 20px;
+    }
+
+    #footerimg img {
+        width: 55px;
+        height: auto;
+    }
+
+    #footercontent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #footercontent div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #footercontent div a {
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        color: #333;
+    }
+
+    #social {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #social img {
+        width: 22px;
+    }
 }
 
-}
